@@ -1,0 +1,199 @@
+<html>
+    <head>
+        <title> Cake Percentage Calculator</title> 
+        <link rel="stylesheet" href="style.css"> 
+    </head>
+    
+
+    <body>
+
+        <main>
+            <header>    
+                <h1>
+                    Cake Ingredient Percentage Calculator
+                </h1>
+            </header>
+            <div class="TemplatePopupWrapper" Id="TemplatePopupWrapper">
+                <button class="ClosePopUpButton" id="TemplateClosePopupButton"></button>
+                <div class="TemplatePopup">
+                    <y class="ChooseRecipeLabel">Choose Recipe</y>
+                    <button class="TemplateRecipeButton" id="PoundCakeButton">Basic Pound Cake</button>
+                    <button class="TemplateRecipeButton" id="ButterCakeButton">Basic Butter Cake</button>
+                    <button class="TemplateRecipeButton">Chocolate Cake</button>
+                    <button class="TemplateRecipeButton">Vanilla Cake</button>
+                </div>
+            </div>
+            <div class="ConvertPopupWrapper" Id="ConvertPopupWrapper">
+                <button class="ClosePopUpButton" id="CloseConvertPopUpButton"></button>
+                <div class="ConvertPopup">
+                    <div class="ConvertPopupHeader">Convert Recipe</div>
+
+                                <form class = "convertIngredientForm">
+                                    <div class =convertIngredientSelectSection>
+                                        <label for="convertIngredientSelect">Ingredient</label>
+                                        <select id="convertIngredientSelect" class="convertIngredientSelect">
+                                            <option value="Baking Powder" weight=0>Baking Powder</option>
+                                            <option value="Baking Soda" weight=0>Baking Soda</option>
+                                            <option value="Butter" weight=0>Butter</option>
+                                            <option value="Buttermilk" weight=0>Buttermilk</option>
+                                            <option value="Cocoa Powder" weight=0>Cocoa Powder</option>
+                                            <option value="Cornstarch" weight=0>Cornstarch</option>
+                                            <option value="Egg" weight=0>Egg</option>
+                                            <option value="Egg White" weight=0>Egg White</option>
+                                            <option value="Egg Yolk" weight=0>Egg Yolk</option>
+                                            <option value="Flour" weight=0>Flour</option>
+                                            <option value="Milk" weight=0>Milk</option>
+                                            <option value="Salt" weight=0>Salt</option>
+                                            <option value="Sugar" weight=0>Sugar</option>
+                                            <option value="Vanilla Extract" weight=0>Vanilla Extract</option>
+                                            <option value="Vegetable Oil" weight=0>Vegetable Oil</option>
+                                            <option value="Water" weight=0>Water</option>
+                                            <option value="Yeast" weight=0>Yeast</option>
+                                        </select>
+                                        <button id="AddConvertableIngredientButton" class="AddIngredientButton">+</button>
+                                    </div>
+                                </form>
+                                <ul class="recipeToConvertForm" id="recipeToConvertForm">
+<!--                                     <li class="ConvertIngredientHolder">
+                                        <button class="ConvertIngredientRemoveButton" id="ConvertIngredientRemoveButton">-</button>
+                                        <input type="number" min="0" id="convertIngredientWeightField" class="convertIngredientWeightField">
+                                        <select id="SelectVolumeVessel">
+                                            <option value="cup">cup</option>
+                                            <option value="tbsp">tbsp</option>
+                                            <option value="tsp">tsp</option>
+                                        </select>
+                                        <y>baking powder</y>
+                                    </li> -->
+                                        
+
+                                </ul>
+                                <div>
+                                    <button class="ConvertButton" id="ConvertButton">Convert</button>
+                                </div>
+                    </div>
+                </div>
+            <div>
+            <section class="padding_section">
+
+
+
+                
+        <!--             <div>
+                        <label for="weight">weight</label>
+                        <input type="number" min="0" id="weight" placeholder="Enter Weight">
+                    </div> -->
+                <button class="LoadTemplateRecipeButton" id="LoadTemplateRecipeButton">Load Template Recipe</button>
+                
+<!--                 <div>
+                    <button id="LoadButton" class="LoadButton">Load </button>
+                </div> -->
+                <div>
+                    <button id="ConvertFromCupsButton" class="ConvertFromCupsButton">Convert From Cups</button>
+                </div> 
+                <div>
+                    <button id="ClearIngredientsButton" class="ClearIngredientsButton">Clear </button>
+                </div> 
+                <div class="RecipeContainer">
+                <h2>Recipe</h5>
+                    <form class = "ingredientForm">
+                        <div class =ingredientSelectSection>
+                            <label for="ingredientSelect">Ingredient</label>
+                            <select id="ingredientSelect" class="IngredientSelect" >
+                                <option value="Baking Powder" waterContent=0 weight=0 percentageInRecipe=0 recipeItem tsp="4" cup="no" tbsp ="no">Baking Powder</option>
+                                <option value="Baking Soda" waterContent=0 weight=0 percentageInRecipe=0 recipeItem  tsp="6" cup="no" tbsp ="no">Baking Soda</option>
+                                <option value="Butter"  waterContent=15 weight=0 percentageInRecipe=0 recipeItem tbsp="14.1" cup="226" tsp="no">Butter</option>
+                                <option value="Buttermilk" waterContent=88 weight=0 percentageInRecipe=0 recipeItem cup="227" tbsp ="no" tsp="no">Buttermilk</option>
+                                <option value="Cocoa Powder" waterContent=0 weight=0 percentageInRecipe=0 recipeItem cup="84" tbsp ="no" tsp="no">Cocoa Powder</option>
+                                <option value="Cornstarch" waterContent=0 weight=0 percentageInRecipe=0 recipeItem cup="112" tbsp ="no" tsp="no">Cornstarch</option>
+                                <option value="Egg" waterContent=75 weight=0 percentageInRecipe=0 recipeItem egg="50" cup="no" tbsp ="no" tsp="no">Egg</option>
+                                <option value="Egg White" waterContent=90 weight=0 percentageInRecipe=0 recipeItem eggWhite="36" cup="no" tbsp ="no" tsp="no">Egg White</option>
+                                <option value="Egg Yolk" waterContent=50 weight=0 percentageInRecipe=0 recipeItem eggYolk="14" cup="no" tbsp ="no" tsp="no">Egg Yolk</option>
+                                <option value="Flour" waterContent=0 weight=0 percentageInRecipe=100 recipeItem cup="120" tbsp ="no" tsp="no">Flour</option>
+                                <option value="Milk" waterContent=88 weight=0 percentageInRecipe=0 recipeItem cup="227" tbsp ="no" tsp="no">Milk</option>
+                                <option value="Salt" waterContent=0 weight=0 percentageInRecipe=0 recipeItem tbsp="18" tsp="6" cup="no" >Salt</option>
+                                <option value="Sugar" waterContent=0 weight=0 percentageInRecipe=0 recipeItem cup="198" tbsp ="no" tsp="no">Sugar</option>
+                                <option value="Vanilla Extract" waterContent=100 weight=0 percentageInRecipe=0 recipeItem tbsp="14" tsp="4.7" cup="no">Vanilla Extract</option>
+                                <option value="Vegetable Oil" waterContent=0 weight=0 percentageInRecipe=0 recipeItem cup="198" tbsp ="no" tsp="no">Vegetable Oil</option>
+                                <option value="Water" waterContent=100 weight=0 percentageInRecipe=0 recipeItem cup="227" tbsp ="no" tsp="no">Water</option>
+                                <option value="Yeast" waterContent=0 weight=0 percentageInRecipe=0 recipeItem tsp="3" cup="no" tbsp ="no">Yeast</option>
+                            </select>
+                            <button id="AddIngredientButton" class="AddIngredientButton">+</button>
+                        </div>
+                    </form>
+        <!--         <form class = "baseInredientForm">
+                    <div class =baseIngredientSelectSection>
+                        <label for="baseIngredientSelect">Base Ingredient</label>
+                        <select id="baseIngredientSelect">
+                            <option value="Flour" waterContent=0 weight=0 recipeItem >Flour</option>
+                            <option value="Butter" waterContent=15 weight=0 recipeItem>Butter</option>
+                            <option value="Sugar" waterContent=0 weight=0 recipeItem>Sugar</option>
+                            <option value="Egg" waterContent=75 weight=0 recipeItem>Eggs</option>
+                            <option value="Salt" waterContent=0 weight=0 recipeItem>Salt</option>
+                            <option value="Baking Powder" waterContent=0 weight=0 recipeItem>Baking Bowder</option>
+                            <option value="Cornstarch" waterContent=0 weight=0 recipeItem>Cornstarch</option>
+                            <option value="Egg Whites" waterContent=90 weight=0 recipeItem>Egg White</option>
+                            <option value="Egg Yolks" waterContent=50 weight=0 recipeItem>Egg Yolk</option>
+                            <option value="Milk" waterContent=88 weight=0 recipeItem>Milk</option>
+                            <option value="Vanilla Extract" waterContent=100 weight=0 recipeItem>Vanilla Extract</option>
+                            <option value="Vegetable Oil" waterContent=0 weight=0 recipeItem>Vegetable Oil</option>
+                            <option value="Buttermilk" waterContent=88 weight=0 recipeItem>Buttermilk</option>
+                            <option value="Cocoa Powder" waterContent=0 weight=0 recipeItem>Cocoa Powder</option>
+                            <option value="Water" waterContent=100 weight=0 recipeItem>Water</option>
+                        </select>
+                    </div> -->
+                    <ul id="recipeContainerList" class="recipeContainerList">
+        <!--                  <li>
+                            <input type="number"id="editableweightholder" class="editableweightholder" placeholder="Enter Weight">
+                            g of   
+                            </input>
+                            flour   
+                            <i>100%</i>
+                            <button class="removeButton">x</button>
+                        </li> -->
+                        
+                    </ul>
+                </div>
+                <div class="totalWeightHolder" id="totalWeightHolder">
+                    Total Weight = 0g
+                </div>
+                <div class="TotalWaterContentHolder" id="TotalWaterContentHolder">
+                    Total Water Content = 0g
+                </div>
+                <div class="HydrationHolder" id="HydrationHolder">
+                    Hydration = 0%
+                </div>
+
+
+                <div>
+                    <button id="ScaleRecipeButton" class="ScaleRecipeButton">Scale Recipe</button>    
+                    <input type="number" id="ScaleRecipeWeight" placeholder="Enter Weight" min="0" class="ScaleRecipeWeightInputField">g
+                    </input>
+                </div>
+                <div>
+                     <button id="ScaleForOptimalEggButton" class="ScaleRecipeButton">Scale For Optimal Egg Weight</button>    
+                    <input type="number" id="ScaleEggRecipeNumber" placeholder="Number Of Eggs" min="0" class="ScaleEggRecipeWeightInputField">g
+                    </input>
+                </div> 
+                <div class="ScaledRecipe" id="ScaledRecipeHolder">
+                    <h4>Scaled Recipe</h4>
+                    <label for="ScaledRecipeTitleInputField"> Recipe Title</label>
+                    <input type="text" id="ScaledRecipeTitleInputField">
+                        
+                    </input>
+                    <div id="ScaledTotalWeightHolder">Total Weight = </div>
+        <!--             <div id="ScaledIngredientsHolder">100g Flour</div> -->
+                </div>
+
+            </section>
+           
+        </main>
+
+    </body>
+
+
+
+        <script>
+
+        </script>
+        <script src="main.js"></script>
+</html>

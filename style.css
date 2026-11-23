@@ -1,0 +1,313 @@
+header{
+    background-color: rgb(212, 86, 113);
+    color: white;
+    padding: 20px 25px
+
+}
+main{
+    background-color: white ;
+    box-shadow: 0 10px 25px grey;
+    overflow: hidden;
+    border-radius: 12px;
+
+}
+section.padding_section{
+    padding: 10px 10px;
+
+}
+h1{
+    font-size: 24px;
+    font-family:'Times New Roman', Times, serif;
+}
+body{
+
+    margin: 0px auto;
+    display: grid;  
+    justify-content: center;
+    align-items:center;
+    min-height: 100vh;
+    background-color: antiquewhite;
+
+}
+form.ingredientForm{
+    
+}
+.ingredientSelectSection{
+
+}
+
+.AddIngredientButton{
+    color: white;
+    background-color: rgb(212, 86, 113);
+    cursor: pointer;
+    border: none;
+    border-radius: 3px;
+}
+.AddIngredientButton:hover{
+    background-color: rgb(157, 71, 94);
+}
+.AddIngredientButton:active{
+    background-color: rgb(99, 39, 57);
+}
+
+.RecipeContainer{
+    
+}
+ul.recipeContainerList{
+    list-style-type:none;
+    padding: 0;
+}
+.editableweightholder{
+    width: 50;
+}
+
+.removeButton{
+    color: white;
+    background-color: rgb(212, 86, 113);
+    margin-left: 5;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.removeButton:hover{
+    background-color: rgb(157, 71, 94);
+}
+.removeButton:active{
+    background-color: rgb(99, 39, 57);
+}
+.baseIngredientPercentageHolder{
+    color:rgb(212, 86, 113);
+}
+.ingredientPercentageHolder{
+    color:rgb(212, 86, 113);
+}
+button.SaveRecipeButton{
+    border: none;
+    margin-top: 25 ;
+    padding: 1 50px;
+    background-color:rgb(212, 86, 113);
+    color: white;
+    cursor: pointer;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 1000;
+}
+button.SaveRecipeButton:hover{
+    background-color: rgb(157, 71, 94);
+}
+button.SaveRecipeButton:active{
+    background-color: rgb(99, 39, 57);
+}
+
+.ScaleRecipeWeightInputField{
+    width: 100;
+}
+button.LoadTemplateRecipeButton{
+    border-radius: 5px;
+    border: none;
+    background-color:rgb(212, 86, 113);
+    color: white;
+    cursor: pointer;
+    font-weight: 100;
+
+}   
+button.LoadTemplateRecipeButton:hover{
+    background-color: rgb(157, 71, 94);
+}
+button.LoadTemplateRecipeButton:active{
+    background-color: rgb(99, 39, 57);
+}
+button.ClearIngredientsButton{
+    border: none;
+    background-color:rgb(212, 86, 113);
+    color: white;
+    cursor: pointer;
+    font-weight: 100;
+    margin-top: 5;
+    border-radius: 5px;
+}
+button.ClearIngredientsButton:hover{
+    background-color: rgb(157, 71, 94);
+}
+button.ClearIngredientsButton:active{
+    background-color: rgb(99, 39, 57);
+}
+button.LoadButton{
+    border-radius: 5px;
+    border: none;
+    background-color:rgb(212, 86, 113);
+    color: white;
+    cursor: pointer;
+    font-weight: 100;
+    margin-top: 5;
+}
+button.LoadButton:hover{
+    background-color: rgb(157, 71, 94);
+}
+button.LoadButton:active{
+    background-color: rgb(99, 39, 57);
+}
+button.ScaleRecipeButton{
+    border-radius: 5px;
+    border: none;
+    background-color:rgb(212, 86, 113);
+    color: white;
+    cursor: pointer;
+    font-weight: 100;
+    margin-top: 5;
+}
+button.ScaleRecipeButton:hover{
+    background-color: rgb(157, 71, 94);
+}
+button.ScaleRecipeButton:active{
+    background-color: rgb(99, 39, 57);
+}
+button.ConvertFromCupsButton{
+    border-radius: 5px;
+    border: none;
+    background-color:rgb(212, 86, 113);
+    color: white;
+    cursor: pointer;
+    font-weight: 100;
+    margin-top: 5;
+}
+button.ConvertFromCupsButton:hover{
+    background-color: rgb(157, 71, 94);
+}
+button.ConvertFromCupsButton:active{
+    background-color: rgb(99, 39, 57);
+}
+.TemplatePopupWrapper{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    background: rgba(0,0,0,0.5);
+    display: none;
+
+}
+.TemplatePopup{
+    background: white;
+    display: grid;
+    text-align: center;
+    margin: 15% auto;
+    position: relative;
+    padding: 20px;
+    max-width: 300px;
+    border-radius: 10%;
+    
+}
+.TemplateRecipeButton{
+    margin: 10;
+    height: 30;
+    border: none;
+    border-color: rgb(212, 86, 113);
+    border-radius: 12px;
+    transition-duration: 0.4s;
+}
+.TemplateRecipeButton:hover{
+    background-color: rgb(224, 212, 212);
+    color:  rgb(10, 10, 10);
+}
+.ChooseRecipeLabel{
+    border: none;
+    background-color:rgb(212, 86, 113);
+    color: white;
+    font-weight: 100;
+    margin-top: 5;
+    padding: 10 20px;  
+    text-align: center;
+    border-radius: 10px;
+
+}
+.ConvertPopupWrapper{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    background: rgba(0,0,0,0.5);
+    display: none;
+}
+button.ClosePopUpButton{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    background-color: transparent;
+    border: none;
+}
+.ConvertPopup{
+    position: relative;
+    background: white;
+    display: grid;
+  
+    margin: 9% auto;
+
+    max-width: 300px;
+
+
+    border-radius: 20px;
+    overflow: hidden;
+
+
+}
+.ConvertPopupHeader{
+    position: relative;
+    color: white;
+    background-color: rgb(212, 86, 113);
+    padding: 13;
+    text-align: center;
+    font-size: 30px;
+
+}
+
+.convertIngredientWeightField{
+    width: 50px;
+}
+.ConvertIngredientHolder{
+
+
+    margin-bottom: 10;
+    margin-left: 30;
+    
+}
+
+button.ConvertButton{
+
+    margin-bottom: 15px;
+    margin-left: 30;
+    
+    border-radius: 5px;
+    border: none;
+    background-color:rgb(212, 86, 113);
+    color: white;
+    cursor: pointer;
+    font-weight: 100;
+
+}
+button.ConvertButton:hover{
+    background-color: rgb(157, 71, 94);
+}
+button.ConvertButton:active{
+    background-color: rgb(99, 39, 57);
+}
+ul.recipeToConvertForm{
+    list-style-type:none;
+    position: relative;
+    padding: 0;
+
+
+}
+.convertIngredientForm{
+    margin-top: 25px;
+    margin-left: 30;
+}
+
+button{
+        transition-duration: 0.2s;
+}
+.ScaleEggRecipeWeightInputField{
+    width: 121px;
+}
